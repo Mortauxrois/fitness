@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import { Provider } from 'react-redux';
+import { store } from './store/configure_store.js';
 import reportWebVitals from './reportWebVitals';
+import { YMInitializer } from 'react-yandex-metrika';
+import './assets/css/style.css';
+
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    < Provider store = {store}>
+      <YMInitializer accounts={[71068189]} />
+      <App />
+    </Provider>,
   document.getElementById('root')
 );
 

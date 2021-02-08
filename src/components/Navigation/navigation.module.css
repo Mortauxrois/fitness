@@ -1,0 +1,23 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+a{
+    font-size: 25px;
+    color:#9dffff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.active{
+    color: white;
+}
+

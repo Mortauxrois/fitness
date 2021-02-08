@@ -1,0 +1,181 @@
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.appWrapper {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 7% 1fr 7%;
+      grid-template-rows: 7% 1fr 7%;
+  -ms-grid-columns: 1fr 20%;
+      grid-template-columns: 1fr 20%;
+  justify-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+      grid-template-areas: "head head" "cont as" "foot foot";
+}
+
+.headerWrapper {
+  height: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: head;
+  background-color: #2b5468;
+}
+
+.navWrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loginButtonWrapper {
+  width: 150px;
+  height: 100%;
+}
+
+.userNameText {
+  color: white;
+  text-align: center;
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.logined {
+  background-color: #2b5468;
+}
+
+.not_logined {
+  background-color: black;
+}
+
+.popupOverlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.loginPopup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  background-color: #c8c7c7;
+}
+
+.loginPopup-textWrapper {
+  margin-bottom: 15px;
+}
+
+.loginPopup-text {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.loginPopup-loginBtn {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.loginPopup-showRegisterBtn {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #383737;
+}
+
+.loginPopup-registerBtn {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.loginPopup-closeBtn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.loginPopup-error {
+  text-align: center;
+  color: red;
+  margin-bottom: 15px;
+}
+
+.none {
+  display: none;
+}
+
+.contentWrapper {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: cont;
+}
+
+.asideWrapper {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: as;
+}
+
+.footerWrapper {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: foot;
+  background-color: #9c9c9c;
+}
+/*# sourceMappingURL=style.css.map */

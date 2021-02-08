@@ -1,0 +1,40 @@
+.wrapper{
+    width: 100%;
+}
+
+.loadingImg{
+    width: 200px;
+    text-align: center;
+    margin: 40px;
+}
+
+
+.headImg{
+    max-width: 100%;
+    height: auto;
+    margin-left: 15px;
+}
+
+
+.articleContent{
+    margin: 0 0 15px 15px;
+}
+
+
+.articleContent blockquote{
+    background-color: rgb(254, 255, 195);
+    font-style: italic;
+    padding: 20px;
+    margin-block-start: 15px;
+    margin-block-end: 15px;
+    margin-inline-start: 15px;
+    margin-inline-end: 15px;
+    border-radius: 10px;
+}
+
+
+
+.date{
+    color: rgb(88, 88, 88);
+    font-style: italic;
+}

@@ -1,0 +1,152 @@
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root{
+  width: 100%;
+  height: 100%;
+}
+
+.appWrapper{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 7% 1fr 7%;
+  grid-template-columns: 1fr 20%;
+//  grid-gap: 5px;
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: start;
+  grid-template-areas:
+  "head head"
+  "cont as"
+  "foot foot"
+}
+
+
+.headerWrapper{
+  height: 100%;
+  grid-area: head;
+  background-color: #2b5468;
+}
+
+.navWrapper{
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.loginButtonWrapper{
+  width: 150px;
+  height: 100%;
+}
+
+
+.userNameText{
+  color: white;
+  text-align: center;
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.logined{
+  background-color:#2b5468;
+}
+
+.not_logined{
+  background-color: rgb(0, 0, 0);
+}
+
+
+.popupOverlay{
+  display: flex;
+  position: fixed;
+  align-items: center;
+  align-content: center; 
+  justify-content: center; 
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.loginPopup{
+  display: flex;
+  flex-direction: column; 
+  padding: 15px;
+  background-color: rgb(200, 199, 199);
+  &-textWrapper{
+    margin-bottom: 15px;
+  }
+  &-text{
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  &-loginBtn{
+    margin-bottom: 15px;
+    font-size: 20px;    
+  }
+  &-showRegisterBtn{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #383737; 
+  }
+  &-registerBtn{
+    margin-bottom: 15px;
+    font-size: 20px;    
+  }
+  &-closeBtn{
+    align-self: flex-end;
+  }
+  &-error{
+    text-align: center;
+    color: red;
+    margin-bottom: 15px;
+  }
+}
+
+.none{
+  display: none;
+}
+
+
+.contentWrapper{
+  grid-area: cont;
+
+
+}
+
+
+.asideWrapper{
+  grid-area: as;
+
+}
+
+
+.footerWrapper{
+  grid-area: foot;
+  background-color: rgb(156, 156, 156);
+}
+

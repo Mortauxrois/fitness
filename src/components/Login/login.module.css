@@ -1,0 +1,23 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    margin: 30px 0 30px 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.errorText{
+    color: red;
+}
+
+.loginButton{
+    font-size: 24px;
+    width: 50%;
+}
+
+

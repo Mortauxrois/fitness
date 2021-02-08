@@ -1,0 +1,58 @@
+.wrapper{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    margin-bottom: 5px;
+    margin: 15px;
+}
+
+.logo{
+    display: block;
+    width: 120px;
+    border-radius: 10px;
+}
+
+.name{
+    display:inline;
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(3, 3, 88);
+}
+.name:hover{
+    text-decoration: none;
+    color: rgb(55, 55, 207);
+}
+
+
+.description{
+    display:inline;
+    font-style: italic;
+    font-size: 18px;
+    color: rgb(97, 96, 96);
+    margin: 0 0 0 15px; 
+}
+
+
+.addressLink{
+    color: rgb(63, 62, 62);
+    display: inline;
+    font-size: 18px;
+    margin-left: 15px;
+}
+.addressLink:hover{
+    text-decoration: none;
+    color: rgb(0, 144, 77);
+}
+
+.telephone{
+    display: inline;
+    font-size: 18px;
+    color: rgb(63, 62, 62);
+    margin-left: 10px;
+    background-color: rgb(205, 205, 253);
+    border-radius: 5px;
+}
+
+.address{
+    font-size: 15px;
+}

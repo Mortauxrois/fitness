@@ -1,0 +1,23 @@
+.wrapper{
+    width: 50%;
+    height: 15%;
+}
+
+.hasError{
+    border-style: solid;
+    border-color: red;
+    border-width: 2px;
+    border-radius: 3px;
+    background-color: rgb(245, 199, 199);
+}
+
+.inputField{
+    margin: 15px 0 15px 0;
+    padding: 0;
+    font-size: 24px;
+    width: 100%;
+}
+
+.errorText{
+    color: red;
+}
